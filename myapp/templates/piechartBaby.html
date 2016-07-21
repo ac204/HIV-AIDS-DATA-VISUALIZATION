@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body_block %}
+{% include_container "piechart_container" 400 500 %}
+{% endblock %}
+
+{% block right_top %}
+              <h3 class="box-title">
+                Parents with babies not tested
+              </h3>
+            </div>
+            <div class="box-body">
+              <div  style="height: 250px; width: 100%;">  {% block body_block3 %} List of parentd with babies not tested {% endblock %}
+           
+               <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        
+                        <th>Contact</th>
+                        
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for x in patients %}
+                        <tr>
+                            <td>{{ x.art.name}}</td>
+                             
+                            <td>{{ x.art.telephone_number}}</td>
+                            
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+
+                </table>
+
+              </div>
+              {% endblock %}

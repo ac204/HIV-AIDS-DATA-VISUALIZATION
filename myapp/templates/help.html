@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html>
+	
+	<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Data Visualization</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/AdminLTE.min.css' %}">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="{% static 'dist/css/skins/_all-skins.min.css' %}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{% static 'plugins/iCheck/flat/blue.css' %}">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="{% static 'plugins/morris/morris.css' %}">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="{% static 'plugins/jvectormap/jquery-jvectormap-1.2.2.css' %}">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="{% static 'plugins/datepicker/datepicker3.css' %}">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="{% static 'plugins/daterangepicker/daterangepicker-bs3.css' %}">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css' %}">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+	<body class="hold-transition skin-blue sidebar-mini">
+	 <header class="main-header">
+	<div class="box box-info"> 
+	<h2 align="center"> STEP BY STEP INSTRUCTIONS ON HOW TO USE THE SYSTEM</h2>
+	</div>
+	<div>
+	
+	<div> 
+	<h> How to add users to the system</h>
+	<ol>
+	<li>Visit the admin page at URL http://127.0.0.1:8000/admin/ </li>
+	<li>Go to AUTHENTICATION AND AUTHORIZATION section <br/> <img src="{% static 'dist/img/adduser.jpg' %}" class="img-circle" alt="User Image"></li>
+
+	<li>Go to Users section and click on the Add button</li>
+<li> Fill in the details of the new user and Save them <br/> <img src="{% static 'dist/img/adduser-128x128.jpg' %}" class="img-circle" alt="User Image">  </li>
+
+		
+	</ol>
+
+<hr/>
+	
+
+	</div>
+	<div>
+		<h> How to use the charts</h>
+		<ol>
+			<li> Click on the Charts folder icon in the Menu widget.</li>
+			<li>Select the type of chart you want to view. For example choose Male vs. Female to view the chart representing the trend of HIV/AIDS infection between Males and Females.</li>
+		</ol>
+		<hr/>
+
+	</div>
+	<div class="content">
+		<h> How to the Geo-insights</h>
+		<ol>
+			<li> Click on the Geo-Insights folder icon in the Menu widget.</li>
+			<li>Select the type of geo-insight you want. For example choose Patients to explore the demographical data of ART patients with respect to their district of residence.</li>
+		</ol>
+		
+<hr/>
+	</div>
+	<div class="content">
+		<h> How to Reports</h>
+		<ol>
+			<li>Click on the Reports folder icon in the Menu widget.</li>
+			<li>Select the type of report you want. For example choose ART Challenges to view/download a report on the challenges patients face during ART.</li>
+		</ol>
+		<hr/>
+
+	</div>
+
+
+		
+	</div>
+		
+
+	</body>
+</html>

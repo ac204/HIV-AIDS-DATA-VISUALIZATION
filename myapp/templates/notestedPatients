@@ -1,0 +1,14 @@
+
+
+{% block title %}ART{% endblock %}
+
+{% block content %}
+
+Art List:
+<p>
+
+{{patients}} 
+</p>
+{% endfor %}
+
+{% endblock %}
